@@ -1,0 +1,16 @@
+{
+  "name": "code-style-lint-main",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "release": "pnpm test && pnpm publish -r"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

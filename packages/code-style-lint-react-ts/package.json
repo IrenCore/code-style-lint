@@ -1,0 +1,26 @@
+{
+  "name": "code-style-lint-react-ts",
+  "version": "1.0.0",
+  "description": "ESlint config used for Nuxt",
+  "repository": "nuxt/eslint-config",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "eslint-plugin-react": "^7.32.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "eslint": "^8.33.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.33.0",
+    "typescript": "*"
+  }
+}

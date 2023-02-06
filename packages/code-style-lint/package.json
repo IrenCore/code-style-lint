@@ -1,0 +1,20 @@
+{
+  "name": "code-style-lint",
+  "version": "1.0.0",
+  "description": "ESlint config used for Nuxt",
+  "repository": "nuxt/eslint-config",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.33.0"
+  }
+}
