@@ -1,21 +1,21 @@
 module.exports = {
-    "extends": [
+    extends: [
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended"
     ],
-    "overrides": [
+    overrides: [
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+    parser: "@typescript-eslint/parser",
+    parserOptions: {
+        ecmaVersion: "latest",
+        sourceType: "module"
     },
-    "plugins": [
+    plugins: [
         "react",
         "@typescript-eslint"
     ],
-    "rules": {
+    rules: {
     }
 }

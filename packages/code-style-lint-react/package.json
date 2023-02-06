@@ -1,13 +1,11 @@
 {
   "name": "code-style-lint-react",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "code-style-lint for react js project.",
   "author": "laoer536 <1547698569@qq.com>",
   "repository": "git@github.com:laoer536/code-style-lint.git",
   "license": "MIT",
-  "exports": {
-    ".": "./index.js"
-  },
+  "type": "commonjs",
   "files": [
     "index.js"
   ],

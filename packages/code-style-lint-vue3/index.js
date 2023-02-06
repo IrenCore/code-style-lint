@@ -1,18 +1,18 @@
 module.exports = {
-    "extends": [
+    extends: [
         "eslint:recommended",
         "plugin:vue/vue3-essential",
         "plugin:prettier/recommended"
     ],
-    "overrides": [
+    overrides: [
     ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+    parserOptions: {
+        ecmaVersion: "latest",
+        sourceType: "module"
     },
-    "plugins": [
+    plugins: [
         "vue"
     ],
-    "rules": {
+    rules: {
     }
 }
