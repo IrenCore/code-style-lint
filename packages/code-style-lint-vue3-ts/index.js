@@ -9,9 +9,9 @@ module.exports = {
     ],
     parser: "vue-eslint-parser",
     parserOptions: {
-        "ecmaVersion": "latest",
-        "sourceType": "module",
-        "parser": "@typescript-eslint/parser"
+        ecmaVersion: "latest",
+        sourceType: "module",
+        parser: "@typescript-eslint/parser"
     },
     plugins: [
         "vue",
