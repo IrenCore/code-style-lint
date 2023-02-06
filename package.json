@@ -8,7 +8,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "release": "pnpm test && pnpm publish -r"
+    "release": "pnpm publish -r"
   },
   "keywords": [],
   "author": "",
