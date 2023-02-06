@@ -1,8 +1,9 @@
 {
   "name": "code-style-lint-react-ts",
   "version": "1.0.0",
-  "description": "ESlint config used for Nuxt",
-  "repository": "nuxt/eslint-config",
+  "description": "code-style-lint for react ts project.",
+  "author": "laoer536 <1547698569@qq.com>",
+  "repository": "git@github.com:laoer536/code-style-lint.git",
   "license": "MIT",
   "exports": {
     ".": "./index.js"
