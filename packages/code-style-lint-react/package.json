@@ -12,7 +12,9 @@
     "index.js"
   ],
   "dependencies": {
-    "eslint-plugin-react": "^7.32.2"
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1"
   },
   "devDependencies": {
     "eslint": "^8.33.0"
