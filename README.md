@@ -14,7 +14,7 @@ Code style lint config for front-end project.
   yarn add eslint-config-code-style-lint eslint prettier -D
   ```
 
-  Create a '.eslinrc' file to your project root
+  Create a '.eslintrc' file to your project root
 
   ```javascript
   {
@@ -35,7 +35,7 @@ Code style lint config for front-end project.
   yarn add eslint-config-code-style-lint-ts eslint prettier -D
   ```
 
-  Create a '.eslinrc' file to your project root
+  Create a '.eslintrc' file to your project root
 
   ```javascript
   {
@@ -56,7 +56,7 @@ Code style lint config for front-end project.
   yarn add eslint-config-code-style-lint-vue3-ts eslint prettier -D
   ```
 
-  Create a '.eslinrc' file to your project root
+  Create a '.eslintrc' file to your project root
 
   ```javascript
   {
@@ -79,7 +79,7 @@ Code style lint config for front-end project.
   yarn add eslint-config-code-style-lint-vue3 eslint prettier -D
   ```
 
-  Create a '.eslinrc' file to your project root
+  Create a '.eslintrc' file to your project root
 
   ```javascript
   {
@@ -100,7 +100,7 @@ Code style lint config for front-end project.
   yarn add eslint-config-code-style-lint-react-ts eslint prettier -D
   ```
 
-  Create a '.eslinrc' file to your project root
+  Create a '.eslintrc' file to your project root
 
   ```javascript
   {
@@ -121,7 +121,7 @@ Code style lint config for front-end project.
   yarn add eslint-config-code-style-lint-react eslint prettier -D
   ```
 
-  Create a '.eslinrc' file to your project root
+  Create a '.eslintrc' file to your project root
 
   ```javascript
   {

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-code-style-lint-vue3",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "code-style-lint for vue3 js project.",
   "author": "laoer536 <1547698569@qq.com>",
   "repository": "git@github.com:laoer536/code-style-lint.git",

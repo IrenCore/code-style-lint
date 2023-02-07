@@ -14,7 +14,7 @@ Code style lint config for front-end project.
   yarn add eslint-config-code-style-lint-ts eslint prettier -D
   ```
 
-  Create a '.eslinrc' file to your project root
+  Create a '.eslintrc' file to your project root
 
   ```javascript
   {
