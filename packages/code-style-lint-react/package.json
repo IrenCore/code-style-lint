@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-code-style-lint-react",
-  "version": "3.0.1",
+  "version": "3.0.3",
   "description": "code-style-lint for react js project.",
   "author": "laoer536 <1547698569@qq.com>",
   "repository": "git@github.com:laoer536/code-style-lint.git",
