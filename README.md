@@ -17,7 +17,7 @@ Code-style-lint-react-ts
   },
   "extends": [
     "./.eslintrc-auto-import.json",
-    "eslint-config-code-style-lint-react-ts"
+    "code-style-lint-react-ts"
   ],
   "rules": {}
 }
@@ -37,7 +37,7 @@ Code-style-lint-vue3-ts
   },
   "extends": [
     "./.eslintrc-auto-import.json",
-    "eslint-config-code-style-lint-vue3-ts"
+    "code-style-lint-vue3-ts"
   ],
   "rules": {
     "vue/multi-word-component-names": "off"
