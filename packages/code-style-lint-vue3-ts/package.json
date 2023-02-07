@@ -1,9 +1,14 @@
 {
-  "name": "code-style-lint-vue3-ts",
-  "version": "2.0.1",
+  "name": "eslint-config-code-style-lint-vue3-ts",
+  "version": "3.0.0",
   "description": "code-style-lint for vue3 ts project.",
   "author": "laoer536 <1547698569@qq.com>",
   "repository": "git@github.com:laoer536/code-style-lint.git",
+  "type": "commonjs",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
@@ -13,10 +18,11 @@
   },
   "devDependencies": {
     "typescript": "^4.9.5",
-    "eslint": "^8.33.0"
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.3"
   },
   "peerDependencies": {
-    "eslint": "^8.33.0",
+    "eslint": "*",
     "typescript": "*"
   }
 }
