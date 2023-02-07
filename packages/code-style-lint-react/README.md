@@ -9,7 +9,7 @@ Code style lint config for front-end project.
   //npm
   npm install eslint-config-code-style-lint-react eslint prettier -D
   //pnpm 
-  npm install eslint-config-code-style-lint-react eslint prettier -D
+  pnpm install eslint-config-code-style-lint-react eslint prettier -D
   //yarn
   yarn add eslint-config-code-style-lint-react eslint prettier -D
   ```
