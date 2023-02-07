@@ -1,6 +1,52 @@
 # code-style-lint
 Code style lint config for front-end project. No more tedious eslint and prettier configuration of your project. 😛
 
+### Demo
+
+Code-style-lint-react-ts
+
+[laoer536/vite3.0-react18-TypeScript-router-dom6-mobx6-Eslint-prettier-template: 这是一个vite3-react18-react-TypeScript-router-dom6-mobx6-Eslint-prettier-husky模板项目 (github.com)](https://github.com/laoer536/vite3.0-react18-TypeScript-router-dom6-mobx6-Eslint-prettier-template)
+
+```js
+//.eslintrc
+ {
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "./.eslintrc-auto-import.json",
+    "eslint-config-code-style-lint-react-ts"
+  ],
+  "rules": {}
+}
+```
+
+Code-style-lint-vue3-ts
+
+[laoer536/vite3.0-vue3.2-TypeScript-Pinia-sass-eslint-prettier-template: 这是一个vite2.6-vue3.2-TypeScript-less-eslint-prettier模板项目 (github.com)](https://github.com/laoer536/vite3.0-vue3.2-TypeScript-Pinia-sass-eslint-prettier-template)
+
+```js
+//.eslintrc
+ {
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "./.eslintrc-auto-import.json",
+    "eslint-config-code-style-lint-vue3-ts"
+  ],
+  "rules": {
+    "vue/multi-word-component-names": "off"
+  }
+}
+```
+
+
+
 ### How to use
 
 - For javascript project
@@ -68,8 +114,6 @@ Code style lint config for front-end project. No more tedious eslint and prettie
 
 - For vue3-javascript project
 
-  
-
   ```js
   //npm
   npm install eslint-config-code-style-lint-vue3 eslint prettier -D
@@ -78,7 +122,7 @@ Code style lint config for front-end project. No more tedious eslint and prettie
   //yarn
   yarn add eslint-config-code-style-lint-vue3 eslint prettier -D
   ```
-
+  
   Create a '.eslintrc' file to your project root
 
   ```javascript
@@ -88,7 +132,7 @@ Code style lint config for front-end project. No more tedious eslint and prettie
     //...
   }
   ```
-
+  
 - For react-typescript project
 
   ```js
