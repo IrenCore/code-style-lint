@@ -1,5 +1,5 @@
 # code-style-lint
-Code style lint config for front-end project.
+Code style lint config for front-end project. No more tedious eslint and prettier configuration of your project. 😛
 
 ### How to use
 
