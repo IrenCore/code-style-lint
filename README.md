@@ -174,3 +174,45 @@ Code-style-lint-vue3-ts
     //...
   }
   ```
+
+- For nuxt3-typescript project
+
+  ```js
+  //npm
+  npm install eslint-config-code-style-lint-nuxt3-ts eslint prettier -D
+  //pnpm 
+  pnpm install eslint-config-code-style-lint-nuxt3-ts eslint prettier -D
+  //yarn
+  yarn add eslint-config-code-style-lint-nuxt3-ts eslint prettier -D
+  ```
+
+  Create a '.eslintrc' file to your project root
+
+  ```javascript
+  {
+    //...
+    "extends": ["code-style-lint-nuxt3-ts"]
+    //...
+  }
+  ```
+
+- For nuxt3-javascript project
+
+  ```js
+  //npm
+  npm install eslint-config-code-style-lint-nuxt3 eslint prettier -D
+  //pnpm 
+  pnpm install eslint-config-code-style-lint-nuxt3 eslint prettier -D
+  //yarn
+  yarn add eslint-config-code-style-lint-nuxt3 eslint prettier -D
+  ```
+
+  Create a '.eslintrc' file to your project root
+
+  ```javascript
+  {
+    //...
+    "extends": ["code-style-lint-nuxt3"]
+    //...
+  }
+  ```
