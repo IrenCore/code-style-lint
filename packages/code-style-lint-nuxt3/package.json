@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-code-style-lint-nuxt3",
+  "version": "1.0.0",
+  "description": "code-style-lint for react js project.",
+  "author": "laoer536 <1547698569@qq.com>",
+  "repository": "git@github.com:laoer536/code-style-lint.git",
+  "license": "MIT",
+  "type": "commonjs",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@nuxtjs/eslint-config": "^12.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.3"
+  },
+  "peerDependencies": {
+    "eslint": "*"
+  }
+}
