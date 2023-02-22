@@ -1,0 +1,1 @@
+{ "extends": ["code-style-lint-react-ts", "code-style-lint", "code-style-lint-react"] }

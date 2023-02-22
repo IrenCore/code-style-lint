@@ -1,0 +1,12 @@
+{
+  "packages": [
+    { "packageName": "code-style-lint", "packageVersion": "3.0.6" },
+    { "packageName": "code-style-lint-nuxt3", "packageVersion": "1.0.0" },
+    { "packageName": "code-style-lint-nuxt3-ts", "packageVersion": "1.0.0" },
+    { "packageName": "code-style-lint-react", "packageVersion": "3.0.5" },
+    { "packageName": "code-style-lint-react-ts", "packageVersion": "3.0.5" },
+    { "packageName": "code-style-lint-ts", "packageVersion": "3.0.5" },
+    { "packageName": "code-style-lint-vue3", "packageVersion": "3.0.5" },
+    { "packageName": "code-style-lint-vue3-ts", "packageVersion": "3.0.5" }
+  ]
+}

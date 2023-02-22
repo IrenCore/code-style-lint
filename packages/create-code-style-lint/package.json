@@ -1,0 +1,31 @@
+{
+  "name": "create-code-style-lint-test",
+  "version": "1.0.4",
+  "description": "",
+  "bin": {
+    "create-code-style-lint-test": "./index.mjs"
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "keywords": [],
+  "author": "YongGit",
+  "license": "ISC",
+  "dependencies": {
+    "kolorist": "^1.6.0",
+    "minimist": "^1.2.7",
+    "inquirer": "^8.2.4",
+    "prettier": "^2.8.3"
+  },
+  "devDependencies": {
+    "unbuild": "^0.9.4",
+    "@types/minimist": "^1.2.2",
+    "elint-config-code-style-lint-react": "3.0.5"
+  },
+  "files": [
+    "dist",
+    "./index.mjs",
+    "meta-data.json"
+  ]
+}
