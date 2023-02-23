@@ -12,6 +12,7 @@ import {
 import { lightGreen, red, cyan } from "kolorist";
 import path, { resolve } from "node:path";
 import { defaultTemplate, prettierConfig } from "./utilts";
+import { fileURLToPath } from "node:url";
 // import path from "path";
 
 const __dirname = path.resolve();
@@ -26,7 +27,12 @@ interface PromptResult {
 async function main() {
   // const argTargetDir = formatTargetDir(args._[0]);
 
-  const metaData = readFileSync(resolve(process.cwd(), "meta-data.json"));
+  const metaDataPath = path.resolve(
+    fileURLToPath(import.meta.url),
+    "../../meta-data.json"
+  );
+
+  const metaData = readFileSync(metaDataPath);
   // @ts-ignore
   const data = JSON.parse(metaData);
 
@@ -54,11 +60,10 @@ async function main() {
   if (existsSync(packagesFilePath)) {
     const pkg = JSON.parse(readFileSync(packagesFilePath, "utf-8"));
     if (pkg.devDependencies) {
-      Object.assign(pkg.devDependencies, {
-        [`elint-config-${lintType}`]: data.packages.find(
-          (i: any) => i.packageName === lintType
-        ).packageVersion,
-      });
+      pkg.devDependencies[`eslint-config-${lintType}`] = `^${
+        data.packages.find((i: any) => i.packageName === lintType)
+          .packageVersion
+      }`;
     } else
       pkg.devDependencies = {
         [`elint-config-${lintType}`]: data.packages.find(
