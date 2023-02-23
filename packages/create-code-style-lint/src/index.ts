@@ -1,32 +1,24 @@
 // import minimist from "minimist";
 import inquirer from "inquirer";
 import prettier from "prettier";
-import { resolveModule } from "local-pkg";
 import {
   readFileSync,
   existsSync,
   writeFileSync,
-  // writeFile,
   appendFileSync,
 } from "fs-extra";
 import { lightGreen, red, cyan } from "kolorist";
-import path, { resolve } from "node:path";
+import path from "node:path";
 import { defaultTemplate, prettierConfig } from "./utilts";
 import { fileURLToPath } from "node:url";
-// import path from "path";
 
 const __dirname = path.resolve();
 
 interface PromptResult {
   lintType: string;
 }
-// const cwd = process.cwd();
-
-// const args = minimist(process.argv.slice(2), { string: ["_"] });
 
 async function main() {
-  // const argTargetDir = formatTargetDir(args._[0]);
-
   const metaDataPath = path.resolve(
     fileURLToPath(import.meta.url),
     "../../meta-data.json"
