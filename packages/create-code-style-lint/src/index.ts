@@ -1,4 +1,5 @@
 // import minimist from "minimist";
+import { execSync } from "child_process";
 import inquirer from "inquirer";
 import prettier from "prettier";
 import {
@@ -114,15 +115,7 @@ async function main() {
   console.log(
     cyan(`You selected ${result.lintType}, Please the following command!`)
   );
-  switch (pkgManager) {
-    case "yarn":
-      console.log(` ${lightGreen("  yarn")}`);
-      break;
-    default:
-      console.log(` ${lightGreen(`  ${pkgManager} install`)}`);
-      break;
-  }
-
+  install(pkgManager);
   console.log();
 }
 
@@ -136,6 +129,19 @@ function pkgFromUserAgent(userAgent: string | undefined) {
     name: pkgSpecArr[0],
     version: pkgSpecArr[1],
   };
+}
+
+function install(pkgManager: string) {
+  switch (pkgManager) {
+    case "yarn":
+      execSync("yarn add prettier eslint -D");
+      console.log(` ${lightGreen("  Config and install is finished")}`);
+      break;
+    default:
+      execSync(`${pkgManager} install prettier eslint -D`);
+      console.log(` ${lightGreen(`  Config and install is finished`)}`);
+      break;
+  }
 }
 
 main().catch((error) => {
