@@ -12,7 +12,7 @@ import path from "node:path";
 import { defaultTemplate, prettierConfig } from "./utilts";
 import { fileURLToPath } from "node:url";
 
-const __dirname = process.cwd();
+const __dirname = path.resolve();
 
 interface PromptResult {
   lintType: string;
