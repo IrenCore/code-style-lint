@@ -12,7 +12,7 @@ import path from "node:path";
 import { defaultTemplate, prettierConfig } from "./utilts";
 import { fileURLToPath } from "node:url";
 
-const __dirname = path.resolve();
+const __dirname = process.cwd();
 
 interface PromptResult {
   lintType: string;
@@ -25,6 +25,7 @@ async function main() {
   );
 
   const metaData = readFileSync(metaDataPath);
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const data = JSON.parse(metaData);
 
@@ -89,6 +90,7 @@ async function main() {
 
     Object.assign(parseEslintrc, {
       extends: Array.from(
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         new Set([...(parseEslintrc?.extends ?? []), lintType])
       ),

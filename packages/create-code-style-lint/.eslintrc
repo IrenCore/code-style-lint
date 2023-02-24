@@ -2,11 +2,5 @@
   "env": {
     "node": true
   },
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  }
+  "extends": ["../code-style-lint-ts"]
 }
