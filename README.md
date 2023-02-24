@@ -1,5 +1,10 @@
 # code-style-lint
+
 Code style lint config for front-end project. No more tedious eslint and prettier configuration of your project. 😛
+
+[Scaffolding creation](./packages/create-code-style-lint)
+
+## Single ingestion
 
 ### Demo
 
@@ -44,8 +49,6 @@ Code-style-lint-vue3-ts
   }
 }
 ```
-
-
 
 ### How to use
 
