@@ -1,8 +1,8 @@
 # create-code-style-lint
 
-Code style lint config for front-end project.
+Code style lint config for front-end project.  Execute the following command in the root directory of your project-->>>
 
-## Scaffolding Your Eslint
+## Scaffolding Your Eslint+Prettier
 
 ### With npm
 
