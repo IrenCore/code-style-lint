@@ -1,5 +1,5 @@
 // import minimist from "minimist";
-import { execSync } from "child_process";
+import { exec } from "child_process";
 import inquirer from "inquirer";
 import prettier from "prettier";
 import {
@@ -108,19 +108,19 @@ async function main() {
     appendFileSync(dir, defaultTemplate(lintType), "utf-8");
   }
 
-  // //生成prettier配置,并保证不会破坏原来的配置
+  //生成prettier配置,并保证不会破坏原来的配置
   const prettierDir = path.join(__dirname, ".prettierrc");
   if (existsSync(prettierDir)) {
     // 不生成 避免破坏原来的prettier配置
   } else {
-    console.log("Directory not found, Will create.prettierrc.");
-    appendFileSync(dir, defaultPrettierTem, "utf-8");
+    console.log("Directory not found, Will create .prettierrc file.");
+    appendFileSync(prettierDir, defaultPrettierTem, "utf-8");
   }
 
   const pkgInfo = pkgFromUserAgent(process.env.npm_config_user_agent);
   const pkgManager = pkgInfo ? pkgInfo.name : "npm";
   console.log(
-    cyan(`You selected ${result.lintType}, Please the following command!`)
+    cyan(`You selected ${result.lintType}, will install eslint and prettier.`)
   );
   install(pkgManager);
   console.log();
@@ -141,11 +141,15 @@ function pkgFromUserAgent(userAgent: string | undefined) {
 function install(pkgManager: string) {
   switch (pkgManager) {
     case "yarn":
-      execSync("yarn add prettier eslint -D");
+      exec("yarn add prettier eslint -D", (err) => {
+        throw err;
+      });
       console.log(` ${lightGreen("  Config and install is finished")}`);
       break;
     default:
-      execSync(`${pkgManager} install prettier eslint -D`);
+      exec(`${pkgManager} install prettier eslint -D`, (err) => {
+        throw err;
+      });
       console.log(` ${lightGreen(`  Config and install is finished`)}`);
       break;
   }
