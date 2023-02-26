@@ -28,7 +28,9 @@ Code style lint config for front-end project.
 
 ```
 
-Currently supported  preset eslint
+Currently supported preset eslint+prettier
+
+If ". eslintrc" file already exists in your project, only the corresponding type of "code style int" will be added to your extensions configuration. Otherwise, try to generate a ". eslintrc" file. If ". prettierc" file already exists in your project, then your ". prettierc" file will not be modified. Otherwise, try to generate a. prettierc file with default configuration.
 
 ```json
 {
@@ -43,5 +45,4 @@ Currently supported  preset eslint
     { "packageName": "code-style-lint-vue3-ts", "packageVersion": "3.0.5" }
   ]
 }
-
 ```

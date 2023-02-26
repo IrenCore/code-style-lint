@@ -4,6 +4,13 @@ export const defaultTemplate = (lintType: string) => `{
   "extends": ["${lintType}"]
 }`;
 
+export const defaultPrettierTem = `{
+  "semi": false,
+  "singleQuote": true,
+  "printWidth": 120,
+  "htmlWhitespaceSensitivity": "ignore"
+}`;
+
 export const prettierConfig: Config = {
   printWidth: 100,
   arrowParens: "avoid",

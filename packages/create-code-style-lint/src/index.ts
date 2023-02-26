@@ -10,7 +10,7 @@ import {
 } from "fs-extra";
 import { lightGreen, red, cyan } from "kolorist";
 import path from "node:path";
-import { defaultTemplate, prettierConfig } from "./utilts";
+import { defaultPrettierTem, defaultTemplate, prettierConfig } from "./utilts";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.resolve();
@@ -76,10 +76,10 @@ async function main() {
     throw new Error("package.json is not exist!");
   }
 
-  // 判断是否存在 .eslintrc
+  //生成eslint配置, extends继承选择的code-style-lint配置包, 并保证不会破坏原来的配置
   const dir = path.join(__dirname, ".eslintrc");
   if (existsSync(dir)) {
-    console.log("Directory exists, Will modify.eslintrc!");
+    console.log("Directory exists, Will modify .eslintrc file!");
 
     const eslintrc = readFileSync(dir, "utf-8");
     const parseEslintrc = JSON.parse(eslintrc) as Record<
@@ -88,7 +88,6 @@ async function main() {
         extends: string[];
       }
     >;
-
     Object.assign(parseEslintrc, {
       extends: Array.from(
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -105,13 +104,21 @@ async function main() {
       "utf-8"
     );
   } else {
-    console.log("Directory not found, Will create.eslintrc.");
+    console.log("Directory not found, Will create .eslintrc file");
     appendFileSync(dir, defaultTemplate(lintType), "utf-8");
+  }
+
+  // //生成prettier配置,并保证不会破坏原来的配置
+  const prettierDir = path.join(__dirname, ".prettierrc");
+  if (existsSync(prettierDir)) {
+    // 不生成 避免破坏原来的prettier配置
+  } else {
+    console.log("Directory not found, Will create.prettierrc.");
+    appendFileSync(dir, defaultPrettierTem, "utf-8");
   }
 
   const pkgInfo = pkgFromUserAgent(process.env.npm_config_user_agent);
   const pkgManager = pkgInfo ? pkgInfo.name : "npm";
-
   console.log(
     cyan(`You selected ${result.lintType}, Please the following command!`)
   );
