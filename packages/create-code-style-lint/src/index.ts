@@ -1,4 +1,3 @@
-// import minimist from "minimist";
 import { exec } from "child_process";
 import inquirer from "inquirer";
 import prettier from "prettier";
@@ -17,6 +16,11 @@ const __dirname = path.resolve();
 
 interface PromptResult {
   lintType: string;
+}
+
+interface EslintConfig {
+  extends: string[];
+  [x: string]: unknown;
 }
 
 async function main() {
@@ -76,23 +80,17 @@ async function main() {
     throw new Error("package.json is not exist!");
   }
 
-  //生成eslint配置, extends继承选择的code-style-lint配置包, 并保证不会破坏原来的配置
+  // 生成eslint配置, extends继承选择的code-style-lint配置包, 并保证不会破坏原来的配置
   const dir = path.join(__dirname, ".eslintrc");
   if (existsSync(dir)) {
     console.log("Directory exists, Will modify .eslintrc file!");
 
     const eslintrc = readFileSync(dir, "utf-8");
-    const parseEslintrc = JSON.parse(eslintrc) as Record<
-      string,
-      {
-        extends: string[];
-      }
-    >;
+    const parseEslintrc: EslintConfig = JSON.parse(eslintrc);
+    // 去重
     Object.assign(parseEslintrc, {
       extends: Array.from(
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        new Set([...(parseEslintrc?.extends ?? []), lintType])
+        new Set([...(parseEslintrc.extends ?? []), lintType])
       ),
     });
     writeFileSync(
@@ -108,11 +106,9 @@ async function main() {
     appendFileSync(dir, defaultTemplate(lintType), "utf-8");
   }
 
-  //生成prettier配置,并保证不会破坏原来的配置
+  // 生成prettier配置,并保证不会破坏原来的配置
   const prettierDir = path.join(__dirname, ".prettierrc");
-  if (existsSync(prettierDir)) {
-    // 不生成 避免破坏原来的prettier配置
-  } else {
+  if (!existsSync(prettierDir)) {
     console.log("Directory not found, Will create .prettierrc file.");
     appendFileSync(prettierDir, defaultPrettierTem, "utf-8");
   }
