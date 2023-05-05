@@ -12,14 +12,14 @@
   "author": "YongGit <1013588891@qq.com>",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^8.2.4",
-    "kolorist": "^1.6.0",
-    "prettier": "^2.8.3"
+    "inquirer": "^9.2.1",
+    "kolorist": "^1.8.0",
+    "prettier": "^2.8.8"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
     "@types/minimist": "^1.2.2",
-    "unbuild": "^0.9.4"
+    "unbuild": "^1.2.1"
   },
   "files": [
     "dist",

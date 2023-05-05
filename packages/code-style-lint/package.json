@@ -10,14 +10,14 @@
     "index.js"
   ],
   "devDependencies": {
-    "eslint": "^8.33.0",
-    "prettier": "^2.8.3"
+    "eslint": "^8.39.0",
+    "prettier": "^2.8.8"
   },
   "peerDependencies": {
     "eslint": "*"
   },
   "dependencies": {
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1"
   }
 }
