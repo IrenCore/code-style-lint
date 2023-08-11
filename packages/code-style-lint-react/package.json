@@ -10,13 +10,13 @@
     "index.js"
   ],
   "dependencies": {
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2"
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.1"
   },
   "devDependencies": {
-    "eslint": "^8.39.0",
-    "prettier": "^2.8.8"
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.1"
   },
   "peerDependencies": {
     "eslint": "*"

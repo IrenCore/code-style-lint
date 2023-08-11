@@ -12,9 +12,9 @@
   "author": "YongGit <1013588891@qq.com>",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.1",
+    "inquirer": "^9.2.10",
     "kolorist": "^1.8.0",
-    "prettier": "^2.8.8"
+    "prettier": "^3.0.1"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
