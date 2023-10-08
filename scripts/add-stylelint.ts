@@ -56,7 +56,7 @@ function run() {
   if (styleFileType !== "scss") {
     throw new Error("Currently, only SCSS is supported.");
   }
-  const workspacesCommand = () => {
+  const getWorkspacesCommand = () => {
     const isWorkspacesMode =
       Boolean(JSON.parse(readFileSync("package.json", "utf-8")).workspaces) || existsSync("pnpm-lock.yaml");
     if (isWorkspacesMode) {
@@ -71,16 +71,17 @@ function run() {
       return "";
     }
   };
+  const workspacesCommand = getWorkspacesCommand();
   const install = packageManager === "npm" ? "install" : "add";
   const isVue = isPackageExists("vue");
   if (!isPackageExists("prettier")) {
-    execSync(`${packageManager} ${install} prettier -D ${workspacesCommand()}`);
+    execSync(`${packageManager} ${install} prettier -D ${workspacesCommand}`);
   }
   execSync(
-    `${packageManager} ${install} stylelint stylelint-config-standard-${styleFileType} stylelint-prettier stylelint-order -D ${workspacesCommand()}`,
+    `${packageManager} ${install} stylelint stylelint-config-standard-${styleFileType} stylelint-prettier stylelint-order -D ${workspacesCommand}`,
   );
   if (isVue) {
-    execSync(`${packageManager} ${install} stylelint-config-recommended-vue postcss-html -D ${workspacesCommand()}`);
+    execSync(`${packageManager} ${install} stylelint-config-recommended-vue postcss-html -D ${workspacesCommand}`);
   }
   writeFileSync(".stylelintrc", stylelintConfig[isVue ? "vue" : "other"]);
 }
