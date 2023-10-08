@@ -2,5 +2,8 @@
   "env": {
     "node": true
   },
-  "extends": ["./packages/code-style-lint"]
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": ["./packages/code-style-lint-ts"]
 }
