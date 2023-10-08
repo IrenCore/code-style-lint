@@ -6,20 +6,13 @@
   "repository": "git@github.com:laoer536/code-style-lint.git",
   "license": "MIT",
   "type": "commonjs",
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js", "add-stylelint.js"],
   "dependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0"
   },
-  "devDependencies": {
-    "eslint": "^8.47.0",
-    "prettier": "^3.0.1"
-  },
-  "peerDependencies": {
-    "eslint": "*",
-    "typescript": "*"
-  }
+  "devDependencies": { "eslint": "^8.47.0", "prettier": "^3.0.1" },
+  "peerDependencies": { "eslint": "*", "typescript": "*" },
+  "bin": { "add-stylelint": "./add-stylelint.js" }
 }

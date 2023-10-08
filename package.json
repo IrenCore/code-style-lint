@@ -7,9 +7,11 @@
     "packages/*"
   ],
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "bootstrap": "tsx scripts/bootstrap.ts",
-    "release": "pnpm publish -r"
+    "build": "esbuild scripts/add-stylelint.ts --platform=node --target=esnext --outdir=build --format=esm --minify && tsx scripts/add-node-env.ts && tsx scripts/copy-build.ts",
+    "release": "pnpm build && pnpm publish -r"
   },
   "keywords": [],
   "author": "",
