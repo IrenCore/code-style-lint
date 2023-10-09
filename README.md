@@ -2,6 +2,10 @@
 
 Code style lint config for front-end project. No more tedious eslint and prettier configuration of your project. 😛
 
+- eslint
+- prettier
+- stylelint(vue-scss react-scss)
+
 [Scaffolding creation](./packages/create-code-style-lint)
 
 ## Single ingestion
