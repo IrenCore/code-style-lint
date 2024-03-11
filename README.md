@@ -2,6 +2,10 @@
 
 Code style lint config for front-end project. No more tedious eslint and prettier configuration of your project. 😛
 
+- eslint
+- prettier
+- stylelint(vue-scss react-scss)
+
 [Scaffolding creation](./packages/create-code-style-lint)
 
 ## Single ingestion
@@ -219,3 +223,6 @@ Code-style-lint-vue3-ts
     //...
   }
   ```
+
+
+Alternatively, if you would like to add 'stylelint' to your project, please execute `add-stylelint` and wait for a moment. The required dependencies for 'stylelint' will be automatically installed for you based on your project and a configuration file will be generated for you.(Currently, only `Vue-scss` and `React-scss` projects are supported)
