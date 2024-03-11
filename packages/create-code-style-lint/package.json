@@ -1,6 +1,6 @@
 {
   "name": "create-code-style-lint",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "bin": {
     "create-code-style-lint": "./index.mjs"
@@ -12,14 +12,14 @@
   "author": "YongGit <1013588891@qq.com>",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.10",
+    "inquirer": "^9.2.15",
     "kolorist": "^1.8.0",
-    "prettier": "^3.0.1"
+    "prettier": "^3.2.5"
   },
   "devDependencies": {
-    "@types/inquirer": "^9.0.3",
-    "@types/minimist": "^1.2.2",
-    "unbuild": "^1.2.1"
+    "@types/inquirer": "^9.0.7",
+    "@types/minimist": "^1.2.5",
+    "unbuild": "^2.0.0"
   },
   "files": [
     "dist",
