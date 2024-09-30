@@ -12,6 +12,9 @@ module.exports = {
     sourceType: "module",
     parser: "@typescript-eslint/parser",
   },
-  plugins: ["vue", "@typescript-eslint"],
-  rules: {},
+  plugins: ["vue", "@typescript-eslint", "simple-import-sort"],
+  rules: {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+  },
 };
