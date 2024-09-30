@@ -60,11 +60,11 @@ Code-style-lint-vue3-ts
 
   ```js
   //npm
-  npm install eslint-config-code-style-lint eslint prettier -D
+  npm install eslint-config-code-style-lint eslint@8.57.1 prettier -D
   //pnpm 
-  pnpm install eslint-config-code-style-lint eslint prettier -D
+  pnpm install eslint-config-code-style-lint eslint@8.57.1 prettier -D
   //yarn
-  yarn add eslint-config-code-style-lint eslint prettier -D
+  yarn add eslint-config-code-style-lint eslint@8.57.1 prettier -D
   ```
 
   Create a '.eslintrc' file to your project root
@@ -81,11 +81,11 @@ Code-style-lint-vue3-ts
 
   ```js
   //npm
-  npm install eslint-config-code-style-lint-ts eslint prettier -D
+  npm install eslint-config-code-style-lint-ts eslint@8.57.1 prettier -D
   //pnpm 
-  pnpm install eslint-config-code-style-lint-ts eslint prettier -D
+  pnpm install eslint-config-code-style-lint-ts eslint@8.57.1 prettier -D
   //yarn
-  yarn add eslint-config-code-style-lint-ts eslint prettier -D
+  yarn add eslint-config-code-style-lint-ts eslint@8.57.1 prettier -D
   ```
 
   Create a '.eslintrc' file to your project root
@@ -102,11 +102,11 @@ Code-style-lint-vue3-ts
 
   ```js
   //npm
-  npm install eslint-config-code-style-lint-vue3-ts eslint prettier -D
+  npm install eslint-config-code-style-lint-vue3-ts eslint@8.57.1 prettier -D
   //pnpm 
-  pnpm install eslint-config-code-style-lint-vue3-ts eslint prettier -D
+  pnpm install eslint-config-code-style-lint-vue3-ts eslint@8.57.1 prettier -D
   //yarn
-  yarn add eslint-config-code-style-lint-vue3-ts eslint prettier -D
+  yarn add eslint-config-code-style-lint-vue3-ts eslint@8.57.1 prettier -D
   ```
 
   Create a '.eslintrc' file to your project root
@@ -123,11 +123,11 @@ Code-style-lint-vue3-ts
 
   ```js
   //npm
-  npm install eslint-config-code-style-lint-vue3 eslint prettier -D
+  npm install eslint-config-code-style-lint-vue3 eslint@8.57.1 prettier -D
   //pnpm 
-  pnpm install eslint-config-code-style-lint-vue3 eslint prettier -D
+  pnpm install eslint-config-code-style-lint-vue3 eslint@8.57.1 prettier -D
   //yarn
-  yarn add eslint-config-code-style-lint-vue3 eslint prettier -D
+  yarn add eslint-config-code-style-lint-vue3 eslint@8.57.1 prettier -D
   ```
   
   Create a '.eslintrc' file to your project root
@@ -144,11 +144,11 @@ Code-style-lint-vue3-ts
 
   ```js
   //npm
-  npm install eslint-config-code-style-lint-react-ts eslint prettier -D
+  npm install eslint-config-code-style-lint-react-ts eslint@8.57.1 prettier -D
   //pnpm 
-  pnpm install eslint-config-code-style-lint-react-ts eslint prettier -D
+  pnpm install eslint-config-code-style-lint-react-ts eslint@8.57.1 prettier -D
   //yarn
-  yarn add eslint-config-code-style-lint-react-ts eslint prettier -D
+  yarn add eslint-config-code-style-lint-react-ts eslint@8.57.1 prettier -D
   ```
 
   Create a '.eslintrc' file to your project root
@@ -165,11 +165,11 @@ Code-style-lint-vue3-ts
 
   ```js
   //npm
-  npm install eslint-config-code-style-lint-react eslint prettier -D
+  npm install eslint-config-code-style-lint-react eslint@8.57.1 prettier -D
   //pnpm 
-  pnpm install eslint-config-code-style-lint-react eslint prettier -D
+  pnpm install eslint-config-code-style-lint-react eslint@8.57.1 prettier -D
   //yarn
-  yarn add eslint-config-code-style-lint-react eslint prettier -D
+  yarn add eslint-config-code-style-lint-react eslint@8.57.1 prettier -D
   ```
 
   Create a '.eslintrc' file to your project root
@@ -186,11 +186,11 @@ Code-style-lint-vue3-ts
 
   ```js
   //npm
-  npm install eslint-config-code-style-lint-nuxt3-ts eslint prettier -D
+  npm install eslint-config-code-style-lint-nuxt3-ts eslint@8.57.1 prettier -D
   //pnpm 
-  pnpm install eslint-config-code-style-lint-nuxt3-ts eslint prettier -D
+  pnpm install eslint-config-code-style-lint-nuxt3-ts eslint@8.57.1 prettier -D
   //yarn
-  yarn add eslint-config-code-style-lint-nuxt3-ts eslint prettier -D
+  yarn add eslint-config-code-style-lint-nuxt3-ts eslint@8.57.1 prettier -D
   ```
 
   Create a '.eslintrc' file to your project root
@@ -207,11 +207,11 @@ Code-style-lint-vue3-ts
 
   ```js
   //npm
-  npm install eslint-config-code-style-lint-nuxt3 eslint prettier -D
+  npm install eslint-config-code-style-lint-nuxt3 eslint@8.57.1 prettier -D
   //pnpm 
-  pnpm install eslint-config-code-style-lint-nuxt3 eslint prettier -D
+  pnpm install eslint-config-code-style-lint-nuxt3 eslint@8.57.1 prettier -D
   //yarn
-  yarn add eslint-config-code-style-lint-nuxt3 eslint prettier -D
+  yarn add eslint-config-code-style-lint-nuxt3 eslint@8.57.1 prettier -D
   ```
 
   Create a '.eslintrc' file to your project root
