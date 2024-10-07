@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-code-style-lint-react",
-  "version": "3.1.2",
+  "version": "3.1.3",
   "description": "code-style-lint for react js project.",
   "author": "laoer536 <1547698569@qq.com>",
   "repository": "git@github.com:laoer536/code-style-lint.git",
@@ -10,7 +10,7 @@
   "dependencies": {
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^12.1.0"
   },
