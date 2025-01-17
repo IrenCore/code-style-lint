@@ -8,6 +8,9 @@ Code style lint config for front-end project. No more tedious eslint and prettie
 
 [Scaffolding creation](./packages/create-code-style-lint)
 
+## sponsor
+[<img src="https://api.gitsponsors.com/api/badge/img?id=597797081" height="20">](https://api.gitsponsors.com/api/badge/link?p=lp0QpYCsODOVmanZnsHKLTKEakB7XaZQ8Y7cI+3I1aIhsdeR+y5ykLrGXVqAxGAMfxeQAQebzlKzZUWyJaoFI2kdE+mTO/yAfPZX4+0JRrP4sD3s8pAMFOk5ZBM7gQoJsGCFffLhgQ87cnnpmCCr6A==)
+
 ## Single ingestion
 
 ### Demo
